@@ -32,7 +32,7 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);  
-    font-size: 6vw;  
+    font-size: 5vw;  
 }
 
 header > p {
@@ -49,6 +49,16 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+section .estrofe {
+    width: fit-content; /* faz a caixa ter o tamanho do texto */
+    padding: 15px 20px;
+    border-radius: 10px;
+    line-height: 2em;
+    text-shadow: 3px 2px 4px #000000;
+    background-color:  rgb(5 36 15 / 75%);
+    color: white;
+}
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -58,20 +68,34 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
 }
 
 section.imagem {
-    background-color: rgb(33, 121, 117);
-    color: white;
+    display: flex; /* ativa o sistema flexbox */
+    flex-direction: column; /* coloca os elementos um embaixo do outro  */
+    gap: 40px; /* espaço ENTRE os blocos */
+    color: rgb(0, 0, 0);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.517);
+    background-size: cover;
+    background-attachment: fixed;    
 }
 
-section.imagem > p {
-    display: inline block;
-    padding: 5px;
-    background-color: rgba(2, 13, 13, 0.233);
+
+section#img01 {
+    background-image: url('../imagens/img01.jpeg');
+    background-position: right bottom;
+}
+
+section#img02 {
+    background-image: url('../imagens/img02.jpeg');
+    background-position: top center;
 }
 
 footer {
