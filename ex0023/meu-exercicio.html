@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            margin: 0px;
+        }
+        th, td {
+            margin: 0px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 0px;
+        }          
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <caption>Tabela 1</caption>
+       <tr>
+        <td>1</td>
+        <td>2</td>
+        <td rowspan="2">3</td>
+        <td>4</td>
+       </tr>
+        <tr>
+        <td>5</td>
+        <td>6</td>       
+        <td>7</td>
+       </tr>
+        <tr>        
+        <td colspan="3">8</td>
+        <td>9</td>
+       </tr>
+        <tr>
+        <td rowspan="2">10</td>
+        <td colspan="2">11</td>
+        <td>12</td>
+    </tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+       </tr>     
+    </table><br>
+
+    <table>
+        <caption>Tabela 2</caption>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">M</td>
+        </tr>
+    </table><br>
+    <table class="tabela3">
+        <caption>Tabela 3</caption>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td rowspan="4">D</td>
+            </tr>
+            <tr>
+                <td rowspan="2">E</td>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td rowspan="3">H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td rowspan="3">J</td>
+                <td rowspan="3">k</td>
+            </tr>
+            <tr>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>P</td>
+                <td>Q</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td colspan="2">S</td>
+                <td>T</td>
+                <td rowspan="2">U</td>
+            </tr>
+            <tr>
+                <td colspan="2">V</td>
+                <td>W</td>
+            </tr>
+            <tr>
+                <td colspan="3">X</td>
+                <td>Y</td>
+            </tr>
+            <tr>
+                <td colspan="4">Z</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
