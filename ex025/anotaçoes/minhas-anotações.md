@@ -82,6 +82,7 @@ cadastros;
 
 informações sensíveis.
 
+***Todo formulário que usa GET, tem um limite até 3mil bytes. passando disso, ao invés de GET, usa o método POST(ex.foto).***
 
 
 
@@ -1337,6 +1338,11 @@ No começo, RegEx parece "uma língua alienígena". Até programadores experient
 
 
 Como você está estudando HTML/CSS e pretende avançar para JavaScript e PHP, aprender RegEx agora vai ajudar bastante quando começar a trabalhar com formulários e validação de dados.
+
+
+*** ***
+
+
 
 
 
