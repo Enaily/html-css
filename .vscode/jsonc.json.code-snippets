@@ -1,0 +1,15 @@
+{
+    "Formulario Basico": {
+        "prefix": "formbasico",
+        "body": [
+            "<h1>Exemplo de Formulário</h1>",
+            "<form action=\"cadastro.php\" method=\"get\" autocomplete=\"on\">",
+            "\t<p>",
+            "\t\t<input type=\"submit\" value=\"Enviar\">",
+            "\t\t<input type=\"reset\" value=\"Limpar\">",
+            "\t</p>",
+            "</form>"
+        ],
+        "description": "Formulário básico"
+    }
+}

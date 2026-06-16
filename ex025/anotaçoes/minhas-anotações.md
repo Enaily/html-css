@@ -1,3 +1,13 @@
+ <h1>Exemplo de Formulário</h1>    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+
 Expressão Regular(RegEx):
 
 ^	Início da string (começo do texto)
@@ -82,7 +92,7 @@ cadastros;
 
 informações sensíveis.
 
-***Todo formulário que usa GET, tem um limite até 3mil bytes. passando disso, ao invés de GET, usa o método POST(ex.foto).***
+***Todo formulário que usa GET, tem um limite até 3mil bytes. passando disso ele não envia os dados, então ao invés de GET, usa o método POST(ex.foto).***
 
 
 
