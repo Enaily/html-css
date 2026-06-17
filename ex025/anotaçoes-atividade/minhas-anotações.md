@@ -1346,9 +1346,12 @@ Como você está estudando HTML/CSS e pretende avançar para JavaScript e PHP, a
 
 *** ***
 
-Media Query= Media Type + Madia fities
+Media Query= Media Type + Media Feature
 media types= tipos de media
-media fities= características de media
+Media Feature= características de media
+
+meida types são indicadas sem ()
+Media Feature são indicadas entre ()
 
 
 
