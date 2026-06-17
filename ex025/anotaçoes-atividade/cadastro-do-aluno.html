@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro do Aluno</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail">
+            </p>             
+            <p>
+                <label for="iidade">Idade:</label>
+                <input type="number" name="idade" id="idade">
+            </p>
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata">
+            </p>
+        </fieldset>
+        <p>          
+            <legend>Sexo</legend> 
+            <input type="radio" name="sexo" id="isxmas" value="M" checked>
+            <label for="isxmas">Masculino</label> <br>
+        
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label> <br>
+            
+            <input type="radio" name="sexo" id="isxpni" value="
+            N">
+            <label for="isxpni">Prefiro não informar</label>           
+        </p>
+        <p>
+            <label for="icurso">Curso Favorito</label>
+            <select name="curso" id="icurso">
+                <option value="H">HTML</option>
+                <option value="C">CSS</option>
+                <option value="JS">JavaScript</option>
+                <option value="PP">PHP</option>
+                <option value="P">Python</option>
+            </select>
+        </p>  
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10">                
+            </textarea>
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

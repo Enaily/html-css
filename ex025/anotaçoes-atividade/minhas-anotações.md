@@ -1,13 +1,3 @@
- <h1>Exemplo de Formulário</h1>    
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
-
-
-
 Expressão Regular(RegEx):
 
 ^	Início da string (começo do texto)
