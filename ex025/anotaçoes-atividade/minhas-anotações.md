@@ -1,3 +1,7 @@
+
+
+
+
 Expressão Regular(RegEx):
 
 ^	Início da string (começo do texto)
@@ -1342,6 +1346,9 @@ Como você está estudando HTML/CSS e pretende avançar para JavaScript e PHP, a
 
 *** ***
 
+Media Query= Media Type + Madia fities
+media types= tipos de media
+media fities= características de media
 
 
 
