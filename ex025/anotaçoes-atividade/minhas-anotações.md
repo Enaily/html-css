@@ -1353,7 +1353,20 @@ Media Feature= características de media
 meida types são indicadas sem ()
 Media Feature são indicadas entre ()
 
+***📱 Teoria do Mobile First (resumida)***
 
+Mobile First é uma abordagem de desenvolvimento em que o site é criado primeiro para telas pequenas, como celulares. Depois, usando Media Queries, o layout é adaptado para tablets e computadores. Essa técnica melhora a responsividade, o desempenho e a experiência do usuário em dispositivos móveis.
+
+*** 📱 Breakpoints ***
+
+São os tamanhos de tela onde o layout do site “muda”.
+Exemplo:
+
+600px (celular)
+768px (tablet)
+992px (desktop)
+
+👉 Ou seja: é o ponto onde a tela quebra o layout atual e precisa de ajuste.
 
 
 

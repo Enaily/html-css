@@ -4,26 +4,35 @@
 
 /* Typical Device Breakpoints 
 -------------------------------
-Pequenas telas: até 600px
-celular: de 600px até 768px
-Tablet: 768px até 992px
-Desktop: 992px até 1200px
-Grandes telas: acima de 1200px
+Pequenas telas: até 480px
+celular: de 481px até 767px
+Tablet: 768px até 991px
+Desktop: 992px até 1199px
+Grandes telas: 1200px até 1399px
+Telas muito grandes: 1400px ou mais
 */
 
 @media print { /* IMPRESSÃO */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
     body {
         background-image: url(../imagem/back-print.jpg); /* desnecessário */
     }
 
     main {
-        width: 90vw;
-        border: 2px;
+        width: 90vw;     
+        text-align: center;
+        position: fixed;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
     }
 
     main::after {
         content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
-        text-decoration: overline;
+        text-decoration: overline;        
     }
 
     main h1 {
@@ -38,7 +47,7 @@ Grandes telas: acima de 1200px
     img#tv { display: none; }
 }
 
-@media screen and (min-width:768px) and (max-width: 992px) { /* TABLET */
+@media screen and (min-width:768px) and (max-width: 991px) { /* TABLET */
     body {
         background-image: url(../imagem/back-tablet.jpg);
     }
@@ -50,7 +59,7 @@ Grandes telas: acima de 1200px
     img#tv { display: none; }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1199px) { /* DESKTOP */
     body {
         background-image: url(../imagem/back-pc.jpg);
     }
@@ -63,7 +72,7 @@ Grandes telas: acima de 1200px
 }
 
 
-@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+@media screen and (min-width: 1200px) and (max-width: 1399px) { /* GRANDES TELAS */
     body {
         background-image: url(../imagem/back-tv.jpg);
     }
@@ -77,4 +86,20 @@ Grandes telas: acima de 1200px
     img#print { display: none; }
     img#pc { display: none; }
     img#tv { display: block; }
+}
+
+@media screen  and (min-width: 1400px) {
+    body {background-image: url(../imagem/back-telao.jpg);
+    }
+
+    main {
+        width: 900px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }    
+    img#telao { display: block; }
 }
