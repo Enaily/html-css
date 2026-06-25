@@ -1368,9 +1368,9 @@ Exemplo:
 
 👉 Ou seja: é o ponto onde a tela quebra o layout atual e precisa de ajuste.
 
-*** Justify-content***= alinha conteúdo dentro do eixo principal
+*** Justify-content***=(é utilizado quando usa o wrap/wrap-reverse) alinha conteúdo dentro do eixo principal
 *** align-items***= alinha itens dentro do eixo transversal
-*** align-content***= alinha itens no eixo transversal mais quando eles estão empacotados.
+*** align-content***=(é utilizado quando usa o wrap/wrap-reverse) alinha itens no eixo transversal mais quando eles estão empacotados.
 
 
 ***align-content***: por padrão, o valor é stretch, ou seja, as linhas de itens são esticadas para ocupar todo o espaço disponível no eixo transversal.
@@ -1380,6 +1380,16 @@ Exemplo:
 → Distribui as linhas com espaço ao redor de cada uma.
 → Há espaço antes da primeira linha, entre as linhas e depois da última.
 → Funciona apenas quando existem várias linhas (flex-wrap: wrap).
+
+No space-around, o espaço entre os itens é o dobro do espaço existente nas extremidades (start e end).
+
+💡 Macete para decorar:
+
+space-between → sem espaço nas extremidades.
+space-around → metade do espaço nas extremidades.
+space-evenly → todos os espaços são exatamente iguais (entre itens e nas extremidades).
+
+
 
 
 
