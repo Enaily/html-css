@@ -1368,12 +1368,18 @@ Exemplo:
 
 👉 Ou seja: é o ponto onde a tela quebra o layout atual e precisa de ajuste.
 
+*** Justify-content***= alinha conteúdo dentro do eixo principal
+*** align-items***= alinha itens dentro do eixo transversal
+*** align-content***= alinha itens no eixo transversal mais quando eles estão empacotados.
 
 
+***align-content***: por padrão, o valor é stretch, ou seja, as linhas de itens são esticadas para ocupar todo o espaço disponível no eixo transversal.
 
+***align-content: space-around;***
 
-
-
+→ Distribui as linhas com espaço ao redor de cada uma.
+→ Há espaço antes da primeira linha, entre as linhas e depois da última.
+→ Funciona apenas quando existem várias linhas (flex-wrap: wrap).
 
 
 
