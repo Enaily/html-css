@@ -1388,9 +1388,16 @@ No space-around, o espaço entre os itens é o dobro do espaço existente nas ex
 space-between → sem espaço nas extremidades.
 space-around → metade do espaço nas extremidades.
 space-evenly → todos os espaços são exatamente iguais (entre itens e nas extremidades).
+quando criamos container flaxbox a parte de fora é flex e a parte de dentro não é flex.
 
 
+todo item em flexbox terá order 0 por padrão
 
+*** align-self *** se aplica aos itens e vai funcionar diretamente no
+cross-axis(eixo transversal)
+
+*** flex-basis: auto *** 
+a largura dos itens pra cada elemento é dada através do tamanho do seu conteúdo
 
 
 
