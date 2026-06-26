@@ -1397,8 +1397,19 @@ todo item em flexbox terá order 0 por padrão
 cross-axis(eixo transversal)
 
 *** flex-basis: auto *** 
-a largura dos itens pra cada elemento é dada através do tamanho do seu conteúdo
+a largura dos itens pra cada elemento é dada através do tamanho do seu conte údo. 
 
+***flex-grow ***  → define o quanto o item pode crescer.
+
+*** flex-shrink *** → define o quanto o item pode encolher. 
+
+flex-grow: 1
+→ Permite que o item cresça para ocupar o espaço livre disponível no contêiner.
+
+flex-shrink: 1
+→ Permite que o item encolha quando faltar espaço no contêiner.
+
+flex= flex-grow + flex-shrink + flex-basis
 
 
 
