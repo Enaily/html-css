@@ -39,31 +39,56 @@ article.text-media {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 article.media-text {
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: space-between;
+    gap: 20px;
 }
 
 article > div.text {
-    flex: 1 1 500px;  
+    flex: 1 1 500px; 
+    min-width: 0px; /* importante */
 }
 
 article > div.media {
-    flex: 1 0 400px;
+    flex: 1 1 300px;
+    min-width: 0px; /* importante */
 }
 
 div.media > img {
     display: block;
     margin: auto;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     padding: 10px; 
 }
 
 div.media > iframe {
     display: block;
-    margin: auto;
-    width: 90%;      
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16/ 9;         
+}
+
+
+@media screen and (max-width: 600px) {
+
+    article.text-media,
+    article.media-text {
+        flex-direction: column;
+    }
+
+    article > div.text,
+    article > div.media {      
+        width: 100%;
+    }
+
+    p {
+        text-align: left;
+    }
 }
