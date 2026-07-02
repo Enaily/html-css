@@ -1442,5 +1442,10 @@ px → % → fr
 
 fr = fração do espaço restante.
 
+*** Grid-Area: ***
+
+grid-area:  2 / 4 / 3 / 5
+grid-area:
+linha inicial / coluna inicial / linha final / coluna final
 
 
