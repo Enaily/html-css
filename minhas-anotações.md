@@ -1409,7 +1409,38 @@ flex-grow: 1
 flex-shrink: 1
 → Permite que o item encolha quando faltar espaço no contêiner.
 
-flex= flex-grow + flex-shrink + flex-basis
+flex= flex-grow + flex-shrink + flex-basis.
+
+
+*** Grid Explícito	Grid Implícito ***
+Criado pelo desenvolvedor	Criado automaticamente pelo navegador
+Usa grid-template-columns e grid-template-rows	Usa grid-auto-rows e grid-auto-columns
+Estrutura planejada	Estrutura gerada quando falta espaço
+
+Uma frase fácil de lembrar:
+
+Explícito = eu crio.
+Implícito = o navegador cria.
+
+GRID - Ordem de cálculo
+
+Container: 1500px
+
+grid-template-columns:
+100px 40% 1fr 1fr
+
+1) px → 100px
+2) % → 40% de 1500 = 600px
+3) sobra → 1500 - 100 - 600 = 800px
+4) fr → 800 ÷ 2 = 400px para cada 1fr
+
+Resultado:
+100px | 600px | 400px | 400px
+
+Regra:
+px → % → fr
+
+fr = fração do espaço restante.
 
 
 
